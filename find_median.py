@@ -10,16 +10,19 @@ def find_median(num):
         return None
     
     sorted_num = sorted(num)
+    print(sorted_num)
     
     numbers = len(sorted_num)
+    print(numbers)
     middle_index = numbers // 2
+    print(middle_index)
 
     if numbers % 2 == 1:
         return sorted_num[middle_index]
     else:
         return (sorted_num[middle_index - 1] + sorted_num[middle_index] / 2 )
 
-# values = [12, 7, -3, 82, 4]
-# result = find_median(values)
+values = [1, 2, 3, 4, 5, 6]
+result = find_median(values)
 
-# print(result)
+print(result)
